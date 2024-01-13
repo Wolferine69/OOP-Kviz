@@ -5,7 +5,7 @@ import quiz_brain
 list_otazek=[]
 
 for one_question in data.question_data:
-    new_question=question_model.Question(one_question["text"],one_question["answer"])
+    new_question=question_model.Question(one_question["question"],one_question["correct_answer"])
     list_otazek.append(new_question)
 
 kviz=quiz_brain.QuizBrain(list_otazek)
